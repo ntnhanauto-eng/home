@@ -41,18 +41,21 @@
         color: white;
         text-align: center;
     }
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
 
-    .icon {
-        width: 70px;
-        height: 70px;
-        border-radius: 20px;
-        background: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
 
     .icon img {
         width: 60px;
@@ -65,30 +68,34 @@
     }
 
     /* Mobile */
-    @media (max-width: 768px) {
-        .grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
+  @media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
     }
 
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
 
+    .icon img {
+        width: 48px;
+        height: 48px;
+    }
 
-
-.item:hover .icon {
-    transform: translateY(-5px);
-    transition: 0.3s;
+    .label {
+        font-size: 12px;
+    }
 }
 
-.icon {
-    transition: 0.3s;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
 }
-
-.icon {
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.8);
-}
-
-
 
   
 </style>
@@ -125,7 +132,7 @@
         <div class="label">Thời tiết</div>
     </a>
 
-    <a class="item" href="https://example.com/general" target="_blank" rel="noopener noreferrer"">
+    <a class="item" href="https://example.com/general" target="_blank" rel="noopener noreferrer">
         <div class="icon"><img src="icons/general.png"></div>
         <div class="label">General Affairs</div>
     </a>

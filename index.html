@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart System</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('background.jpg') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+    }
+
+    /* Header */
+    .header {
+        background: linear-gradient(to right, #2ecc71, #27ae60);
+        padding: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .item {
+        text-decoration: none;
+        color: white;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .label {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">Smart system</div>
+
+<div class="grid">
+
+    <a class="item" href="https://ntnhanauto-eng.github.io/block3dviewer/" target="_blank">
+        <div class="icon"><img src="icons/hr.png"></div>
+        <div class="label">Block 3D</div>
+    </a>
+
+    <a class="item" href="https://ntnhanauto-eng.github.io/chamcong/" target="_blank">
+        <div class="icon"><img src="icons/vtube.png"></div>
+        <div class="label">Chấm công</div>
+    </a>
+
+    <a class="item" href="https://hr.hd-hvs.com/" target="_blank">
+        <div class="icon"><img src="icons/trans.png"></div>
+        <div class="label">Bảng lương</div>
+    </a>
+
+    <a class="item" href="https://windy.com" target="_blank">
+        <div class="icon"><img src="icons/weather.png"></div>
+        <div class="label">Dock Quay</div>
+    </a>
+
+    <a class="item" href="https://windy.com" target="_blank">
+        <div class="icon"><img src="icons/prod.png"></div>
+        <div class="label">Thời tiết</div>
+    </a>
+
+    <a class="item" href="https://example.com/general" target="_blank">
+        <div class="icon"><img src="icons/general.png"></div>
+        <div class="label">General Affairs</div>
+    </a>
+
+    <a class="item" href="https://example.com/tqm" target="_blank">
+        <div class="icon"><img src="icons/tqm.png"></div>
+        <div class="label">TQM</div>
+    </a>
+
+    <a class="item" href="https://example.com/material" target="_blank">
+        <div class="icon"><img src="icons/material.png"></div>
+        <div class="label">Material</div>
+    </a>
+
+    <a class="item" href="https://example.com/yard" target="_blank">
+        <div class="icon"><img src="icons/yard.png"></div>
+        <div class="label">Yard Care</div>
+    </a>
+
+    <a class="item" href="https://example.com/safety" target="_blank">
+        <div class="icon"><img src="icons/safety.png"></div>
+        <div class="label">Safety & Health</div>
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -3,12 +3,12 @@
   "name": "Smart",
   "icons": [
     {
-      "src": "sm.png",
+      "src": "casing.jpg",
       "sizes": "192x192",
       "type": "image/jpeg"
     },
     {
-      "src": "sm.png",
+      "src": "casing.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
